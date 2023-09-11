@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>ex05.html</title>
+<title>ex10.html</title>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"
 	integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
 	crossorigin="anonymous">
@@ -10,7 +10,7 @@
 		
 		</script>
 <script>
-			const ex05Fn = () =>{
+			const ex10Fn = () =>{
 				const val1 ="Hello World";
 				
 				const params = {
@@ -19,13 +19,19 @@
 				}
 				
 				$.ajax({
-					
-					type: "get",
-					url: "/ajax/ajaxEx05",
-					data: params,
+					type: "post",
+					url: "/ajax/ajaxEx10",
+					data: JSON.stringify(params),
+					contentType: "application/json",
 					
 					success: function(res){
-						console.log( " success ", res )
+						console.log( " success : ", res )
+						console.log(res[0]);
+						for( let i in res ){
+							console.log( "i : " , i );
+							console.log(res[i]);
+						}
+						
 					},
 					error : function(){
 						console.log( " fail " )
@@ -35,9 +41,9 @@
 		</script>
 </head>
 <body>
-	here is ex05.html
+	here is ex10.html
 	<hr>
-	<button onclick="ex05Fn()">call ex05 function</button>
+	<button onclick="ex10Fn()">call ex10 function</button>
 
 </body>
 </html>
