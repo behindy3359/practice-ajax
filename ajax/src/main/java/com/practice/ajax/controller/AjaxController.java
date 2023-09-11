@@ -29,4 +29,11 @@ public class AjaxController {
 		
 		return "Called ajaxExanple03 method";
 	}
+	@PostMapping("/ajaxEx04")
+	public @ResponseBody  String ajaxExample04( @RequestParam("param1") String param1, @RequestParam("param2") String param2) {
+		
+		System.out.println("Param1 = "+param1 + ", Param2 = "+ param2);
+		
+		return "Called ajaxExanple04 method";
+	}
 }

@@ -24,4 +24,9 @@ public class AjaxViewController {
 		
 		return "/example/ex03";
 	}
+	@GetMapping("/ex04")
+	public String ajaxExample04(){
+		
+		return "/example/ex04";
+	}
 }
