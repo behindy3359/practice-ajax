@@ -34,6 +34,12 @@ practice project for ajax in web.
 ****
 
 
+#### 0.0.2
+
+
+practice for post type request
+
+
 #### 0.0.1
 
 
