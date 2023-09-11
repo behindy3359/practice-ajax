@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ex02.html</title>
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+		
+		
+		</script>
+		<script>
+			const ex02Fn = () =>{
+				$.ajax({
+					
+					type: "post",
+					url: "/ajax/ajaxEx02",
+					success: function(res){
+						console.log( " 성공 ", res )
+					},
+					error : function(){
+						console.log( " 실패 " )
+					}
+				})
+			}
+		</script>
+	</head>
+	<body>
+		here is ex02.html<hr>
+		<button onclick="ex02Fn()">ex02함수 호출 </button>
+	
+	</body>
+</html>

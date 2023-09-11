@@ -13,5 +13,10 @@ public class AjaxViewController {
 	public String ajaxExample01(){
 		
 		return "/example/ex01";
+	}	
+	@GetMapping("/ex02")
+	public String ajaxExample02(){
+		
+		return "/example/ex02";
 	}
 }
