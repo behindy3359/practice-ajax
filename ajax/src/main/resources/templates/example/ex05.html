@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ex05.html</title>
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+		
+		
+		</script>
+		<script>
+			const ex05Fn = () =>{
+				const val1 ="Hello World";
+				
+				const params = {
+					"param1" : val1,
+					"param2": "ABCD"
+				}
+				
+				$.ajax({
+					
+					type: "get",
+					url: "/ajax/ajaxEx05",
+					data: params,
+					
+					success: function(res){
+						console.log( " success ", res )
+					},
+					error : function(){
+						console.log( " fail " )
+					}
+				})
+			}
+		</script>
+	</head>
+	<body>
+		here is ex05.html<hr>
+		<button onclick="ex05Fn()">call ex05 function </button>
+	
+	</body>
+</html>
