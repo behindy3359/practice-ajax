@@ -32,6 +32,11 @@ practice project for ajax in web.
 
 
 ****
+#### 0.0.5
+
+
+send parameter with DTO & return DTO object
+
 
 #### 0.0.4
 
