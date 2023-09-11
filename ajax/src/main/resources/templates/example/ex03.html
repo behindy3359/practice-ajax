@@ -2,30 +2,36 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>ex01.html</title>
+		<title>ex03.html</title>
 		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
 		
 		
 		</script>
 		<script>
-			const ex01Fn = () =>{
+			const ex03Fn = () =>{
+				const val1 = "Hello SpringBoor!!";
 				$.ajax({
 					
 					type: "get",
-					url: "/ajax/ajaxEx01",
+					url: "/ajax/ajaxEx03",
+					data: {
+						"param1" : val1,
+						"param2": "Hello"
+					},
+					
 					success: function(res){
-						console.log( " success ", res )
+						console.log( " success ", res );
 					},
 					error : function(){
-						console.log( " fail " )
+						console.log( " fail " );
 					}
 				})
 			}
 		</script>
 	</head>
 	<body>
-		here is ex01.html<hr>
-		<button onclick="ex01Fn()">call ex01 function </button>
-	
+		here is ex03.html<hr>
+		<button onclick="ex03Fn()"> call ex03 function </button>
+		
 	</body>
 </html>
