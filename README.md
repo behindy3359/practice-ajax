@@ -32,6 +32,13 @@ practice project for ajax in web.
 
 
 ****
+
+#### 0.0.６
+
+
+send parameter & return List, DTO object with ResponseEntity
+
+
 #### 0.0.5
 
 
