@@ -33,7 +33,7 @@ practice project for ajax in web.
 
 ****
 
-#### 0.0.3
+#### 0.0.4
 
 
 post type request & send parameter
