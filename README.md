@@ -36,7 +36,13 @@ practice project for ajax in web.
 #### 0.0.3
 
 
-03_get type request & send parameter
+post type request & send parameter
+
+
+#### 0.0.3
+
+
+get type request & send parameter
 
 
 #### 0.0.2
